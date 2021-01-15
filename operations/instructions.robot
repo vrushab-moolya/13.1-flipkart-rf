@@ -32,6 +32,7 @@ Selecting Apple iphone 8(Silver,256GB)
 Adding the phone to cart
   select window  Apple iPhone 8 ( 256 GB Storage, 0 GB RAM ) Online at Best Price On Flipkart.com  
   sleep  2s
+  capture page screenshot  D:/flipkart/screenshots/product.png
   Click Element  ${add_to_cart}
   sleep  2s
   capture page screenshot  D:/flipkart/screenshots/addtocart.png
