@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210115 11:40:09.323" rpa="false">
+<suite id="s1" name="Testcases" source="D:\flipkart\testcases">
+<suite id="s1-s1" name="Tc01" source="D:\flipkart\testcases\tc01.robot">
+<test id="s1-s1-t1" name="User should be able to add electronic device to cart">
+<kw name="Open flipkart application" library="instructions">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${brow}</arg>
+</arguments>
+<msg timestamp="20210115 11:40:09.895" level="INFO">Opening browser 'gc' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20210115 11:40:09.895" endtime="20210115 11:40:17.106"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210115 11:40:17.106" endtime="20210115 11:40:19.250"></status>
+</kw>
+<status status="PASS" starttime="20210115 11:40:09.895" endtime="20210115 11:40:19.250"></status>
+</kw>
+<kw name="Input mobile number,password and click on login button" library="instructions">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobile_no}</arg>
+<arg>8147560015</arg>
+</arguments>
+<msg timestamp="20210115 11:40:19.253" level="INFO">Typing text '8147560015' into text field '//input[@class="_2IX_2- VJZDxU"]'.</msg>
+<status status="PASS" starttime="20210115 11:40:19.253" endtime="20210115 11:40:19.399"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>Tiger123</arg>
+</arguments>
+<msg timestamp="20210115 11:40:19.399" level="INFO">Typing text 'Tiger123' into text field '//input[@type="password"]'.</msg>
+<status status="PASS" starttime="20210115 11:40:19.399" endtime="20210115 11:40:19.527"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login}</arg>
+</arguments>
+<msg timestamp="20210115 11:40:19.527" level="INFO">Clicking element '(//button[@type="submit"])[2]'.</msg>
+<status status="PASS" starttime="20210115 11:40:19.527" endtime="20210115 11:40:19.639"></status>
+</kw>
+<status status="PASS" starttime="20210115 11:40:19.250" endtime="20210115 11:40:19.639"></status>
+</kw>
+<kw name="Navigate to electronics category and selecting a sub category" library="instructions">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210115 11:40:21.654" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210115 11:40:19.646" endtime="20210115 11:40:21.654"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${electronics}</arg>
+</arguments>
+<msg timestamp="20210115 11:40:21.654" level="INFO">Simulating Mouse Over on element '//span[.='Electronics']'.</msg>
+<status status="PASS" starttime="20210115 11:40:21.654" endtime="20210115 11:40:22.038"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20210115 11:40:23.048" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210115 11:40:22.046" endtime="20210115 11:40:23.048"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${apple}</arg>
+</arguments>
+<msg timestamp="20210115 11:40:23.048" level="INFO">Clicking element '//a[@title='Apple']'.</msg>
+<status status="PASS" starttime="20210115 11:40:23.048" endtime="20210115 11:40:23.256"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210115 11:40:25.264" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210115 11:40:23.256" endtime="20210115 11:40:25.264"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>D:/flipkart/screenshots/iphone8.png</arg>
+</arguments>
+<msg timestamp="20210115 11:40:25.816" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/iphone8.png"&gt;&lt;img src="../screenshots/iphone8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210115 11:40:25.264" endtime="20210115 11:40:25.816"></status>
+</kw>
+<status status="PASS" starttime="20210115 11:40:19.646" endtime="20210115 11:40:25.816"></status>
+</kw>
+<kw name="Clicking on iphone 8" library="instructions">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210115 11:40:30.829" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210115 11:40:25.823" endtime="20210115 11:40:30.829"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, 500)</arg>
+</arguments>
+<msg timestamp="20210115 11:40:30.829" level="INFO">Executing JavaScript:
+window.scrollTo(0, 500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210115 11:40:30.829" endtime="20210115 11:40:30.845"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${iphone8}</arg>
+</arguments>
+<msg timestamp="20210115 11:40:30.845" level="INFO">Clicking element '(//img[@class="kJjFO0 _3DIhEh"])[4]'.</msg>
+<status status="PASS" starttime="20210115 11:40:30.845" endtime="20210115 11:40:31.037"></status>
+</kw>
+<status status="PASS" starttime="20210115 11:40:25.823" endtime="20210115 11:40:31.037"></status>
+</kw>
+<kw name="Selecting Apple iphone 8(Silver,256GB)" library="instructions">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210115 11:40:33.042" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210115 11:40:31.041" endtime="20210115 11:40:33.042"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${silver_256gb}</arg>
+</arguments>
+<msg timestamp="20210115 11:40:33.042" level="INFO">Clicking element '//div[.='Apple iPhone 8 (Silver, 256 GB)']'.</msg>
+<status status="PASS" starttime="20210115 11:40:33.042" endtime="20210115 11:40:33.322"></status>
+</kw>
+<status status="PASS" starttime="20210115 11:40:31.041" endtime="20210115 11:40:33.322"></status>
+</kw>
+<kw name="Adding the phone to cart" library="instructions">
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<arguments>
+<arg>Apple iPhone 8 ( 256 GB Storage, 0 GB RAM ) Online at Best Price On Flipkart.com</arg>
+</arguments>
+<status status="PASS" starttime="20210115 11:40:33.327" endtime="20210115 11:40:36.291"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210115 11:40:38.299" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210115 11:40:36.291" endtime="20210115 11:40:38.299"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${add_to_cart}</arg>
+</arguments>
+<msg timestamp="20210115 11:40:38.299" level="INFO">Clicking element '//button[@class="_2KpZ6l _2U9uOA _3v1-ww"]'.</msg>
+<status status="PASS" starttime="20210115 11:40:38.299" endtime="20210115 11:40:38.491"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210115 11:40:40.499" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210115 11:40:38.491" endtime="20210115 11:40:40.499"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>D:/flipkart/screenshots/addtocart.png</arg>
+</arguments>
+<msg timestamp="20210115 11:40:40.907" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/addtocart.png"&gt;&lt;img src="../screenshots/addtocart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210115 11:40:40.499" endtime="20210115 11:40:40.907"></status>
+</kw>
+<status status="PASS" starttime="20210115 11:40:33.327" endtime="20210115 11:40:40.907"></status>
+</kw>
+<kw name="Navigating to home page and clicking on your cart" library="instructions">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20210115 11:40:44.912" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210115 11:40:40.911" endtime="20210115 11:40:44.912"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${home}</arg>
+</arguments>
+<msg timestamp="20210115 11:40:44.912" level="INFO">Clicking element '//img[@title="Flipkart"]'.</msg>
+<status status="PASS" starttime="20210115 11:40:44.912" endtime="20210115 11:40:45.104"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210115 11:40:47.114" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210115 11:40:45.104" endtime="20210115 11:40:47.114"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${your_cart}</arg>
+</arguments>
+<msg timestamp="20210115 11:40:47.114" level="INFO">Clicking element '//span[.='Cart']'.</msg>
+<status status="PASS" starttime="20210115 11:40:47.114" endtime="20210115 11:40:47.338"></status>
+</kw>
+<status status="PASS" starttime="20210115 11:40:40.911" endtime="20210115 11:40:47.338"></status>
+</kw>
+<kw name="Verifying Apple iphone 8(Silver,256GB) in your_cart" library="instructions">
+<kw name="Verifying web page" library="instructions">
+<arguments>
+<arg>${expected_phone}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${title_name}</arg>
+</arguments>
+<status status="PASS" starttime="20210115 11:40:47.342" endtime="20210115 11:40:50.739"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${title_name}</arg>
+</arguments>
+<status status="PASS" starttime="20210115 11:40:50.739" endtime="20210115 11:40:50.739"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Pass!!</arg>
+</arguments>
+<status status="PASS" starttime="20210115 11:40:50.741" endtime="20210115 11:40:50.741"></status>
+</kw>
+<status status="PASS" starttime="20210115 11:40:47.342" endtime="20210115 11:40:50.741"></status>
+</kw>
+<status status="PASS" starttime="20210115 11:40:47.342" endtime="20210115 11:40:50.741"></status>
+</kw>
+<tags>
+<tag>demo</tag>
+</tags>
+<status status="PASS" starttime="20210115 11:40:09.895" endtime="20210115 11:40:50.741" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210115 11:40:09.391" endtime="20210115 11:40:50.753"></status>
+</suite>
+<status status="PASS" starttime="20210115 11:40:09.323" endtime="20210115 11:40:50.757"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">demo</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Testcases">Testcases</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Tc01">Testcases.Tc01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
